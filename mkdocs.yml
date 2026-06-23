@@ -1,0 +1,25 @@
+site_name: Design Guide
+site_url: https://isaacmusokedk.github.io/design-guide/
+site_description: Generisk designguide-skabelon
+theme:
+  name: material
+  language: da
+  palette:
+    - scheme: default
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+nav:
+  - Velkommen: index.md
+  - 0. Brandessens: sections/00-brandessens.md
+  - 1. Logo: sections/01-logo.md
+  - 2. Farver: sections/02-farver.md
+  - 3. Typografi: sections/03-typografi.md
+  - 4. Spacing og layout: sections/04-spacing.md
+  - 5. Ikonografi: sections/05-ikonografi.md
+  - 6. Billeder og illustration: sections/06-billeder.md
+  - 7. Tone of voice: sections/07-tone.md
+  - 8. Design tokens: sections/08-tokens.md
+  - 9. Komponenter (valgfri): sections/09-komponenter.md
