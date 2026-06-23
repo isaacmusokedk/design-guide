@@ -2,59 +2,95 @@
 
 ## Ikonstil
 
-**Princip** — Alle ikoner følger ét konsekvent visuelt bibliotek og blandes aldrig med ikoner fra andre biblioteker.
+**Princip** — ExempelBrand bruger udelukkende Lucide-ikonbiblioteket i outline-stil og blander aldrig ikoner fra andre biblioteker.
 
-**Begrundelse** — Ikonmix er en af de mest almindelige årsager til visuel inkonsistens — et enkelt bibliotek sikrer ensartet streg, størrelse og optisk vægt.
+**Begrundelse** — Lucide er en moderne, vedligeholdt fork af Feather Icons med konsekvent streg, optisk vægt og 24px viewbox. Outline-stilen passer til brandets præcise og rene visuelle karakter — filled-ikoner ville virke tunge ved siden af Playfair Display-overskrifterne.
 
 **Specifikation**
 
 | Egenskab | Værdi |
 |---|---|
-| Bibliotek | [Indsæt: fx Lucide, Feather, Material Symbols] |
-| Stil | Outline / Filled / Duotone |
+| Bibliotek | Lucide Icons |
+| Stil | Outline (2px streg) |
 | Standardstørrelse | 24px |
-| Stregtykkelse | [Indsæt: fx 1.5px] |
-| Farve | Arves fra `--color-neutral` eller konteksttekstfarve |
+| Stregtykkelse | 2px — aldrig 1px (for let) eller 3px (for tungt) |
+| Farve i neutral kontekst | `--color-neutral-700` |
+| Farve i accent-kontekst | `--color-accent` |
+| Farve på primær (navy) baggrund | `--color-secondary` (off-white) |
+| Kilde | `https://lucide.dev` — NPM: `lucide-react` eller `lucide` |
 
 **Visuelt eksempel**
 
-> Indsæt eksempel her
+<div style="display:flex;gap:24px;align-items:center;padding:24px;background:#F7F5F0;border-radius:8px;margin:16px 0;">
+  <div style="display:flex;flex-direction:column;align-items:center;gap:8px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3D3A32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+    <span style="font-family:Inter,sans-serif;font-size:11px;color:#8A8678;">24px neutral</span>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:8px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B08D57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+    <span style="font-family:Inter,sans-serif;font-size:11px;color:#8A8678;">24px accent</span>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:8px;padding:12px;background:#0D2545;border-radius:8px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F7F5F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+    <span style="font-family:Inter,sans-serif;font-size:11px;color:#8A8678;">24px inverted</span>
+  </div>
+</div>
 
 **Kode / download**
 
 ```css
---icon-size-sm: 16px;
---icon-size-md: 24px;
---icon-size-lg: 32px;
---icon-color: var(--color-neutral);
+:root {
+  --icon-size-sm: 16px;
+  --icon-size-md: 24px;    /* Standard */
+  --icon-size-lg: 32px;
+  --icon-color: var(--color-neutral-700);
+  --icon-color-accent: var(--color-accent);
+  --icon-stroke-width: 2;
+}
 ```
 
 ---
 
 ## Ikonanvendelse
 
-**Princip** — Ikoner bruges til at understøtte tekst, ikke erstatte den — kun velkendte universelle ikoner kan stå alene.
+**Princip** — Ikoner understøtter tekst — de erstatter den ikke, medmindre der er tale om universelt kendte symboler med tilhørende aria-label.
 
-**Begrundelse** — Ikoner der bruges uden tekstlabel forudsætter fælles kulturel kontekst, som ikke altid er til stede hos alle brugere.
+**Begrundelse** — ExempelBrands klienter er professionelle i tidspres. Et ikon der kræver fortolkning er en friktion. Ikoner bruges til at vejlede blikket og reducere scanning-tid — ikke som primær kommunikationskanal.
 
 **Specifikation**
 
 | Scenarie | Regel |
 |---|---|
-| Navigation | Altid med tekstlabel |
-| CTA-knap | Valgfri — understøttende rolle |
-| Status-indikator | Kan stå alene, men ledsag med `aria-label` |
-| Dekorative ikoner | Markér med `aria-hidden="true"` |
+| Navigation og menupunkter | Altid med tekstlabel — undtagelse: hamburger-ikon på mobil |
+| CTA-knapper | Understøttende rolle til venstre for tekst — aldrig ikon alene |
+| Status-indikator (check, warning, error) | Kan stå alene med `aria-label` — kun universelle symboler |
+| Dekorative ikoner i hero | `aria-hidden="true"`, ingen label nødvendig |
+| Ikonknapper i dashboards | Altid `aria-label` + tooltip |
 
 **Visuelt eksempel**
 
-> Indsæt eksempel her
+<div style="display:flex;gap:12px;align-items:center;padding:16px;background:#FFFFFF;border-radius:8px;border:1px solid #D6D3CB;margin:16px 0;flex-wrap:wrap;">
+  <button style="display:flex;align-items:center;gap:8px;padding:10px 16px;background:#0D2545;color:#F7F5F0;border:none;border-radius:6px;font-family:Inter,sans-serif;font-size:14px;font-weight:600;cursor:pointer;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F7F5F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+    Download rapport
+  </button>
+  <button style="display:flex;align-items:center;gap:8px;padding:10px 16px;background:transparent;color:#0D2545;border:2px solid #0D2545;border-radius:6px;font-family:Inter,sans-serif;font-size:14px;font-weight:600;cursor:pointer;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0D2545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+    Kontakt os
+  </button>
+</div>
 
 **Kode / download**
 
 ```html
-<!-- Funktionelt ikon (kræver label) -->
-<button aria-label="Luk">
+<!-- Funktionelt ikon i knap (kræver synlig label) -->
+<button>
+  <svg aria-hidden="true" width="16" height="16">...</svg>
+  Download rapport
+</button>
+
+<!-- Ikonknap uden synlig label (kræver aria-label) -->
+<button aria-label="Luk dialog">
   <svg aria-hidden="true">...</svg>
 </button>
 
@@ -66,26 +102,38 @@
 
 ## Brugerdefinerede ikoner
 
-**Princip** — Brugerdefinerede ikoner skal visuelt matche det valgte biblioteks stil før de tages i brug.
+**Princip** — Brugerdefinerede ikoner skal visuelt matche Lucide-bibliotekets outline-stil før de godkendes til brug.
 
-**Begrundelse** — Et custom ikon der afviger visuelt fra bibliotekets stil forstyrrer den optiske konsistens.
+**Begrundelse** — Et custom ikon der afviger fra Lucides visuelle grammatik skaber optisk dissonans, særligt i komponent-tætte layouts som dashboards og rapporter.
 
 **Specifikation**
 
 | Krav | Detalje |
 |---|---|
 | Viewbox | 24×24 |
-| Stregtykkelse | Matcher biblioteket |
-| Corners | Matcher bibliotekets rounding |
-| Filformat | SVG |
-| Navngivning | `icon-[navn].svg` |
+| Stregtykkelse | 2px — identisk med Lucide-standard |
+| Hjørner | `round` linecap og linejoin — matcher Lucide |
+| Filformat | SVG med `currentColor` som stroke-farve |
+| Navngivning | `icon-[beskrivende-navn].svg` — fx `icon-rapport-analyse.svg` |
+| Godkendelsesproces | Fremvises ved siden af nærmeste Lucide-ikon til visuel sammenligning |
 
 **Visuelt eksempel**
 
-> Indsæt eksempel her
+> Custom ikoner vises altid side om side med et Lucide-referenceikon under review-processen.
 
 **Kode / download**
 
+```svg
+<!-- Skabelon for custom ikon — brug currentColor for token-kompatibilitet -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="24" height="24" viewBox="0 0 24 24"
+     fill="none"
+     stroke="currentColor"
+     stroke-width="2"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+  <!-- Ikon-path her -->
+</svg>
 ```
-assets/icons/icon-[navn].svg
-```
+
+Placering: `assets/icons/icon-[navn].svg`

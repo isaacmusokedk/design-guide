@@ -6,38 +6,45 @@ Brandessensen er fundamentet for alt visuelt og kommunikativt arbejde. Alle desi
 
 ## Vision
 
-> Indsæt brandets langsigtede ambition her — hvad ønsker brandet at opnå i verden?
+> ExempelBrands langsigtede ambition.
 
-**Placeholder:** Vi ønsker at [beskriv den fremtid brandet arbejder hen imod].
+Vi ønsker en verden, hvor strategiske beslutninger træffes på baggrund af klarhed — ikke kompleksitet. ExempelBrand arbejder mod et erhvervsliv, hvor enhver organisation har adgang til det analytiske skarphed, der hidtil har tilhørt de få.
 
 ---
 
 ## Mission
 
-> Beskriv hvad brandet gør i dag for at nå visionen — den operative kerneopgave.
+> Hvad ExempelBrand gør i dag for at nå visionen.
 
-**Placeholder:** Vi [beskriv kerneopgaven] for [beskriv målgruppen], så de kan [beskriv udbyttet].
+Vi leverer strategisk rådgivning og implementeringsstøtte til mellemstore virksomheder i vækst, så de kan handle med den overbevisning og præcision, der ellers kræver et internt strategihold.
 
 ---
 
 ## Værdier
 
-> List brandets 3–5 kerneværdier. Hver værdi bør have en kort forklaring på hvad den betyder i praksis.
+> ExempelBrands 3–5 kerneværdier med konkret forklaring.
 
 | Værdi | Hvad det betyder for os |
 |---|---|
-| [Værdi 1] | [Forklaring] |
-| [Værdi 2] | [Forklaring] |
-| [Værdi 3] | [Forklaring] |
+| Klarhed | Vi forenkler det komplekse. Aldrig mere jargon end nødvendigt. Enhver anbefaling skal kunne forklares i ét klart argument. |
+| Ærlighed | Vi siger hvad vi ser — også når det er ubehageligt. Vores klienter betaler os for vores vurdering, ikke for bekræftelse. |
+| Kontinuitet | Vi er ikke leverandører der afleverer rapporter og forsvinder. Vi følger implementeringen og ejer resultatet side om side med klienten. |
+| Præcision | Hvert råd er bundet til data og erfaring. Vi undgår antagelser der ikke kan underbygges. |
 
 ---
 
 ## Personlighed
 
-> Beskriv brandet som om det var en person. Hvilke adjektiver karakteriserer det? Hvad gør det — og hvad gør det aldrig?
+> ExempelBrand som person — adjektiver, modsætninger og stemmens karakter. Baseret på SDU-modellen: hvad brandet er, hvad det ikke er, og hvordan det taler.
 
-**Vi er:** [Adjektiv], [adjektiv], [adjektiv].
+**Vi er:** Seriøse uden at være stive. Præcise uden at være kolde. Direkte uden at være arrogante.
 
-**Vi er ikke:** [Modsætning], [modsætning], [modsætning].
+**Vi er ikke:** Buzzword-drevne, selvpromoverende eller akademisk indpakkede. Vi bruger aldrig et langt ord, når et kort ord gør jobbet.
 
-**Vi taler som:** [Beskriv stemmens karakter — fx "en erfaren mentor der taler direkte og uden jargon"].
+**Vi taler som:** En erfaren, tillidsfuld rådgiver der kender forskel på hvad man siger i et bestyrelseslokale og hvad man skriver i en rapport — og justerer derefter. Tonen er rolig og fast. Vi stiller gerne spørgsmål ved præmisserne, men altid med respekt for klientens tid og intelligens.
+
+**Stemme-eksempler:**
+
+- "Problemet er ikke ambition. Det er prioritering."
+- "Inden vi taler om løsninger, er vi nødt til at blive enige om hvad problemet faktisk er."
+- "Vi leverer ikke slides. Vi leverer beslutningsgrundlag."

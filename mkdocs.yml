@@ -1,16 +1,23 @@
-site_name: Design Guide
+site_name: ExempelBrand Design Guide
 site_url: https://isaacmusokedk.github.io/design-guide/
-site_description: Generisk designguide-skabelon
+site_description: ExempelBrand visuel identitet og designsystem — komplet demonstrationsguide
 theme:
   name: material
   language: da
   palette:
     - scheme: default
+      primary: custom
+      accent: custom
   features:
     - navigation.sections
     - navigation.top
     - search.suggest
     - content.code.copy
+  font:
+    text: Inter
+    code: JetBrains Mono
+extra_css:
+  - assets/extra.css
 nav:
   - Velkommen: index.md
   - 0. Brandessens: sections/00-brandessens.md

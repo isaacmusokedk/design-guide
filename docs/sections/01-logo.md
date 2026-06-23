@@ -4,27 +4,49 @@
 
 **Princip** — Primærlogoet er den eneste autoriserede version til alle primære eksponeringer.
 
-**Begrundelse** — Konsekvent brug af ét primærlogo sikrer genkendelse og forhindrer visuel fragmentering på tværs af kanaler.
+**Begrundelse** — ExempelBrand er en konsulentvirksomhed der sælger tillid. Konsekvent brug af ét primærlogo er den mindste og billigste investering i brandtillid.
 
 **Specifikation**
 
 | Egenskab | Værdi |
 |---|---|
-| Format | SVG (primært), PNG (fallback) |
-| Minimum bredde | 80px (digital) / 20mm (print) |
-| Clearzone | 1x logoets højde på alle sider |
-| Baggrundsvarianter | Lys baggrund / mørk baggrund / ensfarvet |
+| Format | SVG (primært), PNG med transparent baggrund (fallback) |
+| Minimum bredde | 120px (digital) / 30mm (print) |
+| Clearzone | 1× logoets højde på alle fire sider |
+| Skrifttype i logo | Playfair Display Bold — samme som heading-token |
+| Primær farveversion | Navy (`#0D2545`) på off-white (`#F7F5F0`) |
+| Inverteret version | Off-white (`#F7F5F0`) på navy (`#0D2545`) — til mørke baggrunde |
+| Accent-version | Navy med guld-understregning (`#B08D57`) — til premium-kontekster |
 
 **Visuelt eksempel**
 
-> Indsæt eksempel her
+<div style="display:flex;gap:24px;align-items:center;padding:24px;background:#F7F5F0;border-radius:8px;margin:16px 0;">
+  <div style="font-family:'Playfair Display',Georgia,serif;font-size:28px;font-weight:700;color:#0D2545;letter-spacing:-0.5px;">
+    ExempelBrand
+  </div>
+  <div style="width:2px;height:32px;background:#D6D3CB;"></div>
+  <div style="font-family:'Inter',sans-serif;font-size:11px;font-weight:500;color:#8A8678;letter-spacing:2px;text-transform:uppercase;">
+    Strategisk rådgivning
+  </div>
+</div>
+
+<div style="display:flex;gap:24px;align-items:center;padding:24px;background:#0D2545;border-radius:8px;margin:16px 0;">
+  <div style="font-family:'Playfair Display',Georgia,serif;font-size:28px;font-weight:700;color:#F7F5F0;letter-spacing:-0.5px;">
+    ExempelBrand
+  </div>
+  <div style="width:2px;height:32px;background:#1A3D6B;"></div>
+  <div style="font-family:'Inter',sans-serif;font-size:11px;font-weight:500;color:#B08D57;letter-spacing:2px;text-transform:uppercase;">
+    Strategisk rådgivning
+  </div>
+</div>
 
 **Download**
 
 ```
-assets/logo/logo-primary.svg
-assets/logo/logo-primary-dark.svg
-assets/logo/logo-primary-white.svg
+assets/logo/logo-primary.svg          — Navy på transparent
+assets/logo/logo-inverted.svg         — Off-white på transparent
+assets/logo/logo-accent.svg           — Navy + guld-understregning
+assets/logo/logo-monogram.svg         — "EB" monogram til favicon og app-ikon
 ```
 
 ---
@@ -33,25 +55,29 @@ assets/logo/logo-primary-white.svg
 
 **Princip** — Anvend altid den logoversion der passer til konteksten — aldrig en frihåndsmodificeret udgave.
 
-**Begrundelse** — Uautoriserede modifikationer (stræk, rotation, farveskift) underminerer brandets troværdighed.
+**Begrundelse** — ExempelBrand optræder på formater fra visitkort til konferencebannere. En version-matrix forhindrer ad hoc-improvisation der underminerer brandets professionalisme.
 
 **Specifikation**
 
-| Version | Anvendelse |
-|---|---|
-| Horisontal | Standard — til brug i header, print og de fleste digitale flader |
-| Lodret / stacked | Til kvadratiske formater (profilbillede, favicon, app-ikon) |
-| Ikon/monogram | Til meget lille gengivelse under minimumsstørrelse |
+| Version | Anvendelse | Minimum |
+|---|---|---|
+| Horisontal (navn + tagline) | Standard — header, print, præsentationer | 120px |
+| Horisontal (kun navn) | Kompakte headers, e-mail-signatur | 100px |
+| Monogram "EB" | Favicon, profilbillede, app-ikon, under minimumsstørrelse | 32px |
 
 **Visuelt eksempel**
 
-> Indsæt eksempel her
+<div style="display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;background:#0D2545;border-radius:8px;font-family:'Playfair Display',Georgia,serif;font-size:18px;font-weight:700;color:#F7F5F0;letter-spacing:-0.5px;">
+  EB
+</div>
 
 **Kode / download**
 
 ```css
 /* Logo-token — referér altid til den officielle fil, aldrig til en kopi */
 --logo-primary: url('/assets/logo/logo-primary.svg');
+--logo-inverted: url('/assets/logo/logo-inverted.svg');
+--logo-monogram: url('/assets/logo/logo-monogram.svg');
 ```
 
 ---
@@ -60,24 +86,26 @@ assets/logo/logo-primary-white.svg
 
 **Princip** — Definer eksplicit hvad der er forbudt, ikke blot hvad der er tilladt.
 
-**Begrundelse** — Uklarhed om misbrug er den hyppigste årsag til inkonsekvent logobehandling.
+**Begrundelse** — For en konsulentvirksomhed er logoets integritet et direkte signal om arbejdskvaliteten. Logomodifikationer sender forkert signal.
 
 **Specifikation**
 
 | Forbudt | Forklaring |
 |---|---|
-| Stræk eller skæv skalering | Forstyrrer proportioner |
-| Ændring af logofarver | Svækker brandgenkendelse |
-| Placering på støjende baggrund | Reducerer læsbarhed |
-| Tilføjelse af skygge eller effekter | Ikke en del af den autoriserede identitet |
-| Brug under minimumsstørrelse | Skrift og elementer bliver ulæselige |
+| Stræk eller skæv skalering | Forstyrrer proportioner og signalerer sjusk |
+| Brug af andre farver end de tre autoriserede versioner | Underminerer det farvede brandsprog |
+| Placering på fotografiske baggrunde uden overlay | Reducerer kontrast og læsbarhed |
+| Tilføjelse af drop shadow, glow eller andre effekter | Ikke en del af den autoriserede identitet |
+| Brug af logoet under minimumsstørrelse | Playfair Display-bogstaverne kollapser og bliver ulæselige |
+| Brug af alternative skrifttyper i logoet | Logoets typografi er låst til Playfair Display Bold |
 
 **Visuelt eksempel**
 
-> Indsæt eksempel her
+> Logoet må aldrig placeres direkte på et fotografi uden semi-transparent navy-overlay (`rgba(13, 37, 69, 0.72)`).
 
 **Kode / download**
 
 ```
 Ingen kode — se downloadmappen for autoriserede filer.
+Alle requests om logomodifikationer rutes til brandansvarlig.
 ```
