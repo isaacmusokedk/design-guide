@@ -136,3 +136,39 @@ img {
   border-radius: var(--radius-full);
 }
 ```
+
+---
+
+## Anbefalede stockbilledkilder
+
+**Princip** — StockSnap.io er primærkilden til kommerciel produktion. Pexels er den daglige arbejdskilde. Begge er verificerede og juridisk rene til kommerciel brug uden attribution-krav.
+
+**Begrundelse** — Ikke alle royalty-free platforme er juridisk ækvivalente. CC0 Public Domain (StockSnap.io) er den absolutte øverste sikkerhedsmargin — ingen begrænsninger, ingen attribution, ingen redistribution-klausul. Pexels License er næsten tilsvarende robust med høj kvalitet og bred dækning. Unsplash bruges til kureret editorial-indhold. Pixabay undgås i kommerciel produktion (se advarsel nedenfor).
+
+**Verificerede kilder**
+
+| Kilde | URL | Licens | Brugssituation |
+|---|---|---|---|
+| StockSnap.io | stocksnap.io | CC0 Public Domain | Kommerciel produktion — juridisk reneste valg, ingen begrænsninger |
+| Pexels | pexels.com | Pexels License | Daglig arbejdskilde — høj kvalitet, bred dækning, videoer inkluderet |
+| Unsplash | unsplash.com | Unsplash License | Kureret editorial og lifestyle — høj æstetisk standard |
+| Pixabay | pixabay.com | Pixabay License (proprietar) | Undgås i kommerciel produktion — se advarsel nedenfor |
+
+**Primæranbefalinger**
+
+- **Kommerciel produktion:** StockSnap.io (CC0) — brug dette som første valg når leverancen er betalt klientarbejde eller markedsføring.
+- **Daglig designproduktion:** Pexels — stort bibliotek, god søgefunktion, video inkluderet.
+- **Editorial og lifestyle-æstetik:** Unsplash — strengt kureret, konsistent høj kvalitet.
+
+**Advarsel: Pixabay**
+
+Pixabay skiftede licensmodel i 2019 fra CC0 til en proprietær Pixabay License. Platformen yder nul indemnification ved licensbrud fra uploadere — risikoen for tredjepartsrettigheder bæres af den der downloader. Brug ikke Pixabay til kommerciel produktion. De øvrige tre kilder dækker alle relevante behov.
+
+**Søgeord der matcher ExempelBrands fotostil**
+
+```
+"professional meeting natural light"
+"office candid warm"
+"collaboration minimal"
+"workplace authentic"
+```

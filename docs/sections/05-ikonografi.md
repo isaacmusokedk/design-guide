@@ -137,3 +137,40 @@
 ```
 
 Placering: `assets/icons/icon-[navn].svg`
+
+---
+
+## Anbefalede ikonbiblioteker
+
+**Princip** — Lucide er ExempelBrands primære ikonbibliotek. Tabellen nedenfor dokumenterer verificerede MIT-licenserede alternativer til projekter der stiller krav Lucide ikke dækker, samt betingelserne for deres brug.
+
+**Begrundelse** — MIT-licensen er det eneste licensformat der tillader ubegrænset kommerciel brug, redistribution og pakkering i komponentbiblioteker uden attribution-krav. Alle fire primærkilder nedenfor lever op til dette. Kilder med proprietære gratislicenser er noteret separat med deres begrænsninger.
+
+**Primærkilder — MIT-licens**
+
+| Bibliotek | URL | Licens | Antal ikoner | Hvornår vælges det |
+|---|---|---|---|---|
+| Tabler Icons | tabler.io/icons | MIT | 6.000+ | Standardvalg — bred dækning, outline-stil, npm-pakke, Figma-plugin |
+| Phosphor Icons | phosphoricons.com | MIT | 9.000+ | Kræves multi-vægt: thin / light / regular / bold / fill / duotone i samme bibliotek |
+| Iconoir | iconoir.com | MIT | 1.600+ | Projekter der kræver streng geometrisk outline og Figma-plugin |
+| Heroicons | heroicons.com | MIT | ~300 | Tailwind-baserede projekter med minimal ikondækning — konsistens prioriteres over bredde |
+
+**Praktisk standardregel**
+
+> Vælg Tabler Icons som standard. Brug Phosphor Icons hvis guiden kræver multi-vægt-ikoner (fx et ikon der optræder i både thin og bold i samme komponent).
+
+Skift bibliotek kræver godkendelse i design-systemet — bland aldrig to MIT-biblioteker i samme produkt uden dokumenteret begrundelse.
+
+**UXWing — betinget brug**
+
+UXWing (`uxwing.com`) har en proprietær gratislicens: kommerciel brug og ingen attribution kræves, men redistribution er forbudt. Det betyder at ikoner fra UXWing ikke må pakkes i et komponentbibliotek og distribueres videre. Brug er tilladt i design og statiske leverancer. Kontrollér altid aktuelle licensbetingelser på uxwing.com inden brug.
+
+**Kode / download**
+
+```bash
+# Tabler Icons (standard)
+npm install @tabler/icons-react
+
+# Phosphor Icons (multi-vægt)
+npm install @phosphor-icons/react
+```
