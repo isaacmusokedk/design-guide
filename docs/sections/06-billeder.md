@@ -172,3 +172,18 @@ Pixabay skiftede licensmodel i 2019 fra CC0 til en proprietær Pixabay License. 
 "collaboration minimal"
 "workplace authentic"
 ```
+
+---
+
+## Eksempler på korrekt billedstil
+
+Følgende tre billeder er hentet fra Pexels (Pexels License — fri til kommerciel brug) og illustrerer ExempelBrands fotostil i praksis: varmt naturligt lys, menneskefokus og autentiske arbejdsøjeblikke.
+
+![Eksempel 01 — moderne kontor med samarbejde i varme toner](../assets/images/foto-eksempel-01.jpg)
+*Korrekt brug: åbent kontormiljø, varmt lys, naturlig arbejdssituation — ingen opstillet pose. Kilde: Pexels / CadoMaestro ([pexels.com/photo/2983018](https://www.pexels.com/photo/people-working-at-an-office-2983018/))*
+
+![Eksempel 02 — team i rolig koncentration og dialog](../assets/images/foto-eksempel-02.jpg)
+*Korrekt brug: fire kollegaer i autentisk diskussion, blødt lys, menneskefokus frem for interiør. Kilde: Pexels / Thirdman ([pexels.com/photo/5582868](https://www.pexels.com/photo/a-group-of-of-people-happily-working-together-5582868/))*
+
+![Eksempel 03 — coworking med laptops, naturligt lys](../assets/images/foto-eksempel-03.jpg)
+*Korrekt brug: uformel coworking-situation, dagslys, neutral baggrund. Kilde: Pexels / Mizuno K ([pexels.com/photo/12903182](https://www.pexels.com/photo/employees-working-together-in-coworking-office-12903182/))*
